@@ -1,0 +1,6 @@
+# Kdiff3
+*.orig
+
+# netbeans project
+.nbproject
+
