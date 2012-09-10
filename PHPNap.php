@@ -45,6 +45,7 @@ class PHPNap
         {
             $output = null;
             header("HTTP/1.1 {$e->getCode()} {$e->getMessage()}");
+            error_log("HTTP/1.1 {$e->getCode()} {$e->getMessage()}");
         }
         return $output;
     }
