@@ -59,11 +59,9 @@ class PHPNap
     {
         $method = strtolower($method);
 
-        error_log("");
-        error_log("$resource");
+        error_log("Resource: $resource");
         foreach ( $this->handlers as $url => $handler )
         {
-            error_log('testing: ' . $url);
             $params = array();
             if ( preg_match(self::url2regex($url), $resource, $params) )
             {
